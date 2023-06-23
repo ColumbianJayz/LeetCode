@@ -1,14 +1,10 @@
 class Solution {
-    public int searchIndex(int[] nums, int target) {
-        int [] array= new int[nums.length];
-        int tarjay = target;
-        for(int i = 0; i < nums.length; i++){
-            array[i] = nums[i];
-        
-            for(int babe : array){
-                if(babe == tarjay){
-                    return i;
-                }
+    public int search(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                return i;
             }
         }
-        return 0;
+        return -1;
+    }
+}

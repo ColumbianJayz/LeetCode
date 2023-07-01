@@ -1,3 +1,4 @@
+//Runtime of O(log n), Time Complexity of O(1).
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int left = 0;
